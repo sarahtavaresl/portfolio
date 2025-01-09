@@ -7,6 +7,10 @@
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    
+    <!-- Link para a Folha de Estilo da Página - CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
     <title>Meu Perfil</title>
 </head>
 <body>
@@ -14,7 +18,7 @@
 		<header>
 
             <!-- Div Conteudo do Cabeçalho -->
-             <div id="header_content">
+             <div id="header_content" class="flex">
                 
                 <!-- Titulo do Cabeçalho -->
                  <div id="titulo">
@@ -52,18 +56,20 @@
 		<main>
 
              <!-- Seção Sobre você -->
-			 <section id="about">
+			 <section id="about" class="flex_start">
 
                 <!-- Título da Seção -->
 				<h2>Sobre a Generation Brasil</h2>
 
 				<!-- Conteúdo da Seção -->
-				<div id="conteudo">
+				<div id="conteudo" class="flex">
 
 					<!-- Imagem do criador do conteúdo -->
 					<img
 						src="./assets/img/user_01.svg"
 						alt="Foto do criador desse conteudo"
+
+                        class="img_profile"
 					/>
 
 					<!-- Texto sobre o criador do conteúdo -->
@@ -96,13 +102,13 @@
 			 </section>
 			 
 			 <!-- Seção contendo um vídeo de sua preferência -->
-			 <section id="video">
+			 <section id="video" class="flex_start">
 
                 <!-- Título da Seção -->
 				<h2>Meu vídeo favorito:</h2>
 
 				<!-- Vídeo da Seção -->
-				<div class="youtube">
+				<div class="youtube" class="flex">
 					<iframe
 						width="560"
 						height="315"
